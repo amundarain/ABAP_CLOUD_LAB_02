@@ -1,0 +1,8 @@
+INTERFACE zif_lab_01_flight_t100598
+  PUBLIC .
+  INTERFACES zif_lab_03_airports_t100598.
+  CLASS-DATA COMP_ID TYPE STRING.
+  DATA: CONN_ID      TYPE STRING.
+  METHODS: set_conn_id IMPORTING im_conn_id TYPE STRING,
+           get_conn_id EXPORTING ex_conn_id TYPE STRING.
+ENDINTERFACE.
