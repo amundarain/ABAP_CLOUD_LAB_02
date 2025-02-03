@@ -1,14 +1,20 @@
-class ZCL_LAB_20_PERSON_T100598 definition
-  public
-  final
-  create public .
+CLASS zcl_lab_20_person_t100598 DEFINITION
+  PUBLIC
 
-public section.
-protected section.
-private section.
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+   METHODS:  set_name FINAL IMPORTING iv_name TYPE STRING.
+  PROTECTED SECTION.
+   DATA: name TYPE STRING.
+  PRIVATE SECTION.
 ENDCLASS.
 
 
 
-CLASS ZCL_LAB_20_PERSON_T100598 IMPLEMENTATION.
+CLASS zcl_lab_20_person_t100598 IMPLEMENTATION.
+  METHOD set_name.
+
+  ENDMETHOD.
+
 ENDCLASS.
